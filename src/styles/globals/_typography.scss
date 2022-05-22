@@ -1,3 +1,5 @@
+@use './variables' as v;
+
 h1, h2, h3 {
     font-weight: 700;
     line-height: 1.1;
@@ -5,4 +7,8 @@ h1, h2, h3 {
 
 a, a:visited, a:active {
     text-decoration: none;
+}
+
+a, p {
+    color: v.$accent;
 }

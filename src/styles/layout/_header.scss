@@ -1,0 +1,61 @@
+@use '../globals/variables' as v;
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+    
+        img {
+            width: 50px;
+        }
+    
+        h2 {
+            color: v.$primary;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    &__links {
+        ul {
+            display: flex;
+
+            li {
+                color: v.$accent;
+                margin: 0 1rem;
+
+                a {
+                    letter-spacing: 1px;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    &__actions {
+        a {
+            padding: 0.7rem 1.5rem;
+            margin: 0.3rem;
+            background-color: transparent;
+            border-radius: 4px;
+            display: inline-block;
+            font-weight: bold;
+            border: 1px solid v.$primary;
+            text-transform: uppercase;
+            font-size: .75rem;
+        }
+
+        .login {
+            color: v.$primary;
+        }
+
+        .start {
+            background-color: v.$primary;
+            color: #fff;
+        }
+    }
+}
