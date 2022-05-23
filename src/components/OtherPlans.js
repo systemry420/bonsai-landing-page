@@ -20,7 +20,7 @@ const OtherPlans = () => {
   ]
   return (
     <div className='other'>
-        <h1>Super charge your work with add-ons</h1>
+        <h2>Super charge your work with add-ons</h2>
         <div className='list'>
           {plans.map((item, idx) => {
             if (idx === 3) {
@@ -42,8 +42,9 @@ const Item = ({ title, desc, price, learn }) => {
         {learn && learn}
       </div>
       <div className='price'>
-        <h1>{!price && 'Free'}</h1>
-        <h1>{price && price} <span>/MONTH</span></h1>
+        <>
+          {price ? <span><h1>{price}</h1>/MONTH</span> : 'Free'}
+        </>
       </div>
     </div>
   )

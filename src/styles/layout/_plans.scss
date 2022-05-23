@@ -56,3 +56,38 @@
     }
 
 }
+
+.other {
+    padding: 1rem 0;
+    color: v.$accent;
+    
+    & > h2 {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .list {
+        .item {
+            margin: 1rem 0;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            box-shadow: 0 0 10px 10px #eee;
+            height: 8rem;
+
+            .info {
+                h4 {
+                    color: #888;
+                    font-weight: 400;
+                    padding: .5rem 0;
+                }
+            }
+
+            .price {
+                font-size: 130%;
+            }
+        }
+    }
+}
