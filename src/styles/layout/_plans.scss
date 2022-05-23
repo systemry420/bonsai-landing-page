@@ -1,0 +1,59 @@
+@use '../globals/variables' as v;
+
+.plans {
+    padding: 5rem 0;
+
+    @media (min-width: 700px) {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__card {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28%;
+        background-color: #fff;
+        color: v.$accent;
+        border: 1px solid #ccc;
+        margin: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 33px 10px rgb(230, 230, 230);
+
+        .card__price {
+            padding: 2rem 0 1rem 0;
+            border-bottom: 2px solid v.$primary;
+
+            span {
+                font-size: 4rem;
+            }
+        }
+
+        .card__features {
+            padding: 1.5rem 0;
+
+            li {
+                padding: .6rem;
+                &::before {
+                    content: '\2714';
+                    margin-right: .5rem;
+                    color: v.$primary;
+                }
+            }
+        }
+
+        .card__btn {
+            width: 100%;
+            padding: 1.5rem;
+            background-color: v.$primary;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+        
+    }
+
+}
