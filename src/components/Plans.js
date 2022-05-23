@@ -1,4 +1,5 @@
 import React from 'react'
+import OtherPlans from './OtherPlans'
 
 const Plans = () => {
     const plans = [
@@ -44,11 +45,14 @@ const Plans = () => {
     ]
 
   return (
-    <div className='plans'>
-        {plans.map(plan => (
-            <Plan {...plan} />
-        ))}
-    </div>
+    <>
+        <div className='plans'>
+            {/* {plans.map(plan => (
+                <Plan {...plan} />
+            ))} */}
+        </div>
+        <OtherPlans />
+    </>
   )
 }
 
