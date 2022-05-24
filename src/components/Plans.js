@@ -47,9 +47,9 @@ const Plans = () => {
   return (
     <>
         <div className='plans'>
-            {/* {plans.map(plan => (
+            {plans.map(plan => (
                 <Plan {...plan} />
-            ))} */}
+            ))}
         </div>
         <OtherPlans />
     </>
